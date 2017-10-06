@@ -1,0 +1,63 @@
+/*!
+ * Start Bootstrap - Portfolio Item (http://startbootstrap.com/template-overviews/portfolio-item)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
+ */
+
+body {
+    padding-top: 54px;
+    background: black;
+    color: white;
+    font-family: 'PT Mono', monospace;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+a {
+    color: white;
+}
+
+.container-navbar {
+	padding: 0;
+}
+
+#dakka-top {
+	color: white;
+	font-size: 40px;
+}
+
+.dakka {
+	font-family: 'Sedgwick Ave', cursive;
+}
+
+.my-4 {
+	position: relative;
+  left: 771px;
+  bottom: 181px;
+  font-size: 3em;
+}
+
+.typed-cursor {
+  display: none;
+}
+
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url("../img/maxresdefault.jpg") no-repeat;
+    background-size: cover; 
+}
