@@ -16,6 +16,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="vendor/flipClock/flipclock.css">
+
     <!-- Custom styles for this template -->
     <link href="css/index.css" rel="stylesheet">
 
@@ -40,7 +42,8 @@
         <div class="col-md-12 sweepstakes-instructions">
           <h3 class="my-3">Raffle Description</h3>
           <p>** We will be giving away several Warhammer 40k prizes! **</p> 
-          <a href="https://photos.app.goo.gl/Lb5QEwK8KuAbVc503" target="_blank"><h4>Tau Prize (click me)</h4></a>
+          <div id="tau-prize" class="prize-container">
+            <a href="https://photos.app.goo.gl/Lb5QEwK8KuAbVc503" target="_blank"><h4 class="prize-header">Tau Prize (click here for gallery)</h4></a>
             <ul>
               <li> 30+ Firewarriors. About 12 have pulse riles and the rest have pulse carbines. However, I also have tons of bits to change weapon loadouts.</li>
               <li>8 metal oop fire warriors with pulse carbines. </li>
@@ -50,26 +53,32 @@
               <li>2 XV-15 suits</li>
               <li>Lots and lots of weapons and Tau bits (Thank you, Boman Modine!)</li>
             </ul>
-          <a href="https://photos.app.goo.gl/yr9FJ39BoXI7rJyQ2" target="_blank"><h4>Astra Militarum Urban Patrol Prize (click me)</h4></a>
+          </div>
+          <div id="astra-militarum-prize" class="prize-container">
+            <a href="https://photos.app.goo.gl/yr9FJ39BoXI7rJyQ2" target="_blank"><h4 class="prize-header">Astra Militarum Urban Patrol Prize (click here for gallery)</h4></a>
             <ul>
               <li>Chimera with Heavy Bolter and Heavy Flamer</li>
               <li>Chimera with Multi-laser and Heavy Flamer</li>
               <li>3 Armoured Sentinels with Lascannons (pinned for changeability</li>
               <li>NIB Sector Imperialis Objectives (Thank you, Bradley Bliss!</li>
             </ul>
-          <a href="https://photos.app.goo.gl/tjjoABi1l6MT8bfQ2" target="_blank"><h4>Space Wolves Recover the Relic Prize (click me)</h4></a>
+          </div>
+          <div id="space-wolves-prize" class="prize-container">
+            <a href="https://photos.app.goo.gl/tjjoABi1l6MT8bfQ2" target="_blank"><h4 class="prize-header">Space Wolves Recover the Relic Prize (click here for gallery)</h4></a>
             <ul>
               <li>2 units of 3-man Thunderwolves Calvary</li>
               <li>Space Wolves Drop Pod</li>
+              <li>8 Assault Marines (not pictured, but will be soon!)</li>
               <li>Destroyed Aircraft Scenery from GW</li>
               <li>Destroyed Landraider</li>
             </ul>
+          </div>
           <h3 class="my-3">How to Enter:</h3>
           <ol>
             <li>Donate to a Charity Navigator, 4-star or higher approved charity.</li>
             <li>Take a screenshot of the receipt.</li>
             <li>Email the screenshot to omarpatel123@gmail.com</li>
-            <li>Your entry will appear on <a href="https://docs.google.com/spreadsheets/d/1gjo62V6uqmyGgH8AegPivGtRFde5wsaT7mKxJYopWDk/edit?usp=sharing">this Google Sheet</a>(with any sensitive information blurred out, of course).</li>
+            <li>Your entry will appear on <a href="https://docs.google.com/spreadsheets/d/1gjo62V6uqmyGgH8AegPivGtRFde5wsaT7mKxJYopWDk/edit?usp=sharing" target="_blank">this Google Sheet</a>(with any sensitive information blurred out, of course).</li>
           </ol>
           <h3 class="my-3">How it Works:</h3>
           <ol>
@@ -86,6 +95,15 @@
         </div>
       </div>
       <!-- /.row -->
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h3 class="text-center">Time until the Raffle ends</h3>
+          <div class="your-clock"></div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      
 
     </div>
     <!-- /.container -->
@@ -95,6 +113,7 @@
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/typed/typed.min.js"></script>
+    <script src="vendor/flipClock/flipclock.min.js"></script>
     <script src="js/script.js"></script>
 
 

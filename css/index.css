@@ -40,6 +40,10 @@ a {
   display: none;
 }
 
+ul > li, .prize-header {
+    background: rgba(6, 2, 2, 0.38);
+}
+
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -55,4 +59,23 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url("../img/maxresdefault.jpg") no-repeat;
     background-size: cover; 
+}
+
+#tau-prize {
+    background-image: url(https://i.pinimg.com/736x/d5/51/15/d55115202f29a1c9ecafe4dc0dba100b.jpg);   
+}
+
+#astra-militarum-prize {
+    background-image: url(http://2.bp.blogspot.com/-0d38B4nOuwU/Uyc28-zxNiI/AAAAAAAAfhA/rGDZH_I9iqc/s1600/Dow2r_imperial_guard_loading.jpg);
+}
+
+#space-wolves-prize {
+    background-image: url(https://i.pinimg.com/736x/24/24/33/2424333b3fcc7a49ebb5b8cf92b285b7--warhammer-k-space-wolves-english-games.jpg);
+}
+
+.prize-container {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    padding: 3em;
 }
